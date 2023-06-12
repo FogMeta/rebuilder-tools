@@ -29,25 +29,25 @@ config file content is just like the this, just set yours parameters
 
 ```toml
 [aria2] # for download
-  host = ""
-  port = 0
-  secret = ""
+  host = ""     # aria2 server host
+  port = 0      # aria2 server rpc port, default 6800
+  secret = ""   # aria2 secret
 
-[task]
+[task] # for download/build task
   input_path = ""  # download path
   output_path = "" # source file path
   parallel = 0     # number of task parallel, default 3
 
 [mcs] # for upload
-  api_key = ""
-  api_token = ""
-  network = ""
-  bucket_name = ""
+  api_key = ""      # mcs api key
+  api_token = ""    # mcs access token
+  network = ""      # mcs network, default ""
+  bucket_name = ""  # mcs bucket name
 
 [lotus] # for retrieve
-  node_api = ""
-  wallet = ""
-  timeout = 0
+  node_api = ""   # lotus node api
+  wallet = ""     # wallet address
+  timeout = 0     # timeout in seconds
 ```
 
 ### build
